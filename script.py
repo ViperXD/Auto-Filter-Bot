@@ -38,3 +38,13 @@ Bot will automatically search for your file and give links to that!
 ⭕️<b>Library :</b> <a href='https://docs.pyrogram.org/'>Pyrogram 1.0.7</a> 
 
 """
+
+DONATE_MSG = """<b>Thanks for showing interest in donation!</b>
+
+🎁 To donate and support me you can send any amount as you wish
+
+Payment Options:
+• PayPal
+• Paytm
+
+Every contribution matters 😇
