@@ -76,3 +76,26 @@ async def about(client, message):
         )
     except:
         pass
+
+@Client.on_message(filters.command(["donate"]) & filters.private)
+async def about(client, message):
+    try:
+        await message.reply_text(
+            text=script.DONATE_MSG,
+            disable_web_page_preview=True,
+            reply_markup=InlineKeyboardMarkup(
+                [
+                    [
+                        InlineKeyboardButton("BACK", callback_data="help_data"),
+                        InlineKeyboardButton("START", callback_data="start_data"),
+                    ],
+                    [
+                        InlineKeyboardButton(
+                            "DONATE", url="https://paypal.me/VIVEKTVP")
+                    ]
+                ]
+            ),
+            reply_to_message_id=message.message_id
+        )
+    except:
+        pass
